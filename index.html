@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>Evangelist Kuchipudi Srikanth</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Evangelist Kuchipudi Srikanth, preacher of the Gospel in Guntur, Andhra Pradesh. Daily Bible verse, prayer requests and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;600&display=swap">
+<style>
+/* Layout: a Galilee-dawn hero (starry forest-green sky, sunrise over hills and a cross) carrying the day's verse, then pale mint sections with green and gold */
+:root{
+  --bg:#F4FAF5; --surface:#FFFFFF; --ink:#0F2417; --muted:#4E6B57;
+  --line:#D4E7D9; --tint:#E6F3E9;
+  --night:#04190C; --violet:#0E3B22; --plum:#2E7A4A; --dawn:#E8B15A; --on-night:#F7FBF2;
+  --rose:#1E7A46; --gold:#C98A12; --gold-bright:#FFD36B; --gold-soft:#FFF4D9;
+  --display:"Marcellus","Trajan Pro",Georgia,serif;
+  --body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --telugu:"Noto Sans Telugu","Nirmala UI","Gautami",sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#07140C; --surface:#0F2116; --ink:#E8F3EA; --muted:#9FBBA6;
+  --line:#1E3826; --tint:#13281A;
+  --night:#020C05; --violet:#0A2A17; --plum:#1F5A36; --dawn:#B98A3E; --on-night:#F7FBF2;
+  --rose:#5FCF8C; --gold:#F2BE55; --gold-bright:#FFD98A; --gold-soft:#2C2612; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#07140C; --surface:#0F2116; --ink:#E8F3EA; --muted:#9FBBA6;
+  --line:#1E3826; --tint:#13281A;
+  --night:#020C05; --violet:#0A2A17; --plum:#1F5A36; --dawn:#B98A3E; --on-night:#F7FBF2;
+  --rose:#5FCF8C; --gold:#F2BE55; --gold-bright:#FFD98A; --gold-soft:#2C2612; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--night)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--rose)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.grad-text{background:linear-gradient(90deg,var(--gold-bright),#FFE3B0 45%,#C8F2C2);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--night) 90%,transparent);backdrop-filter:blur(10px);color:var(--on-night);border-bottom:1px solid rgba(255,203,107,.2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--display);font-size:1.12rem}
+.links{display:flex;gap:24px;font-size:.92rem}
+.links a{text-decoration:none;opacity:.85}
+.links a:hover{opacity:1;color:var(--gold-bright)}
+.links a.pr{color:var(--gold-bright);opacity:1;font-weight:600}
+@media (max-width:620px){.links a:not(.pr){display:none}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;color:var(--on-night);
+  background:
+    radial-gradient(34% 26% at 50% 70%,rgba(255,214,150,.9) 0%,rgba(255,170,120,.35) 45%,transparent 75%),
+    linear-gradient(180deg,var(--night) 0%,var(--violet) 32%,var(--plum) 54%,var(--dawn) 72%,#FFE2A8 84%)}
+.stars{position:absolute;inset:0 0 50% 0;pointer-events:none;opacity:.8;
+  background-image:radial-gradient(1.5px 1.5px at 12% 18%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 28% 8%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 56% 12%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 84% 22%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 40% 30%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 93% 8%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 6% 44%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 70% 36%,#fff 50%,transparent 51%)}
+.land{position:absolute;left:0;right:0;bottom:0;width:100%;height:42%;pointer-events:none;display:block}
+.sunrays{position:absolute;left:50%;top:70%;width:140vmax;height:140vmax;transform:translate(-50%,-50%);pointer-events:none;
+  background:repeating-conic-gradient(from 0deg,rgba(255,220,160,.10) 0deg 3deg,transparent 3deg 11deg);
+  -webkit-mask:radial-gradient(circle,#000 0%,transparent 45%);mask:radial-gradient(circle,#000 0%,transparent 45%);animation:spin 200s linear infinite}
+@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.sunrays{animation:none}}
+.hero .wrap{position:relative;padding-block:76px 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:52px 48px}}
+.hero .eyebrow{color:var(--gold-bright)}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.5rem);letter-spacing:.01em;margin-top:12px}
+.hero h1 span{display:block}
+.hero .role{margin:16px 0 0;font-size:1.06rem;opacity:.9;max-width:44ch}
+.telugu{font-family:var(--telugu);margin:22px 0 0;font-size:1.06rem;color:#FFE1A3}
+.telugu small{display:block;font-family:var(--body);font-size:.78rem;opacity:.75;letter-spacing:.06em;margin-top:2px;color:var(--on-night)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:600 .95rem var(--body);padding:13px 22px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-bright),#F4A261);color:#2A1300;box-shadow:0 8px 24px -8px rgba(244,162,97,.7)}
+.btn-ghost{background:rgba(255,255,255,.06);color:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--gold-bright);color:var(--gold-bright)}
+
+/* Verse card */
+.verse{background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid rgba(255,210,122,.45);border-radius:20px;padding:30px 26px 22px;backdrop-filter:blur(6px);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.verse-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.verse-top .eyebrow{color:var(--gold-bright)}
+.verse-date{font-size:.82rem;opacity:.8;font-variant-numeric:tabular-nums}
+.verse blockquote{margin:18px 0 12px;font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.45}
+.verse blockquote::before{content:"\201C";color:var(--gold-bright);margin-right:2px}
+.verse blockquote::after{content:"\201D";color:var(--gold-bright);margin-left:2px}
+.verse cite{font-style:normal;font-weight:700;color:var(--gold-bright);letter-spacing:.04em}
+.verse-tools{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.chip{background:rgba(255,255,255,.1);color:var(--on-night);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 13px;font:500 .84rem var(--body);cursor:pointer}
+.chip:hover{border-color:var(--gold-bright);color:var(--gold-bright)}
+.chip[disabled]{opacity:.4;cursor:default}
+
+/* Sections */
+section{padding-block:80px}
+@media (max-width:600px){section{padding-block:56px}}
+.sec-head{max-width:640px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin-top:8px}
+.sec-head p{color:var(--muted);margin:12px 0 0}
+
+/* About */
+.about{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr;gap:28px}}
+.portrait{width:240px;aspect-ratio:1;max-width:100%;border-radius:50%;overflow:hidden;background:var(--violet);box-shadow:0 0 0 6px var(--bg),0 0 0 9px var(--gold),0 24px 50px -20px rgba(14,59,34,.55)}
+.about-text{min-width:0;max-width:62ch}
+.about-text p{margin:0 0 14px}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;padding:0;list-style:none}
+.facts li{background:var(--tint);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem}
+
+/* Ministry */
+.ministry{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:900px){.ministry{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.ministry{grid-template-columns:1fr}}
+.min{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;transition:transform .2s,box-shadow .2s}
+.min:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(14,59,34,.35)}
+.ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--violet),var(--rose))}
+.min h3{font-size:1.25rem;margin:16px 0 6px}
+.min p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* Prayer */
+.prayer-band{background:linear-gradient(180deg,var(--tint),var(--bg));border-top:1px solid var(--line)}
+.prayer{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:start}
+@media (max-width:860px){.prayer{grid-template-columns:1fr;gap:28px}}
+.prayer aside{min-width:0}
+.prayer aside blockquote{margin:24px 0 0;padding-left:18px;border-left:3px solid var(--gold);font-family:var(--display);font-size:1.2rem;line-height:1.5}
+.prayer aside cite{display:block;font:700 .85rem var(--body);color:var(--rose);margin-top:8px;font-style:normal}
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;min-width:0;box-shadow:0 30px 60px -40px rgba(4,25,12,.4)}
+@media (max-width:520px){.form-card{padding:20px}}
+form{display:grid;gap:16px;min-width:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+label{display:grid;gap:6px;font-size:.88rem;font-weight:600}
+label .opt{font-weight:400;color:var(--muted)}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:11px 13px;width:100%}
+textarea{min-height:140px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px color-mix(in srgb,var(--rose) 22%,transparent)}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.9rem;color:var(--muted)}
+.check input{width:auto;margin-top:4px}
+.btn-rose{background:linear-gradient(135deg,var(--rose),#2E9A5C);color:#fff;justify-self:start;box-shadow:0 10px 24px -10px rgba(30,122,70,.55)}
+.btn-rose[disabled]{opacity:.6;cursor:wait;transform:none}
+.form-note{font-size:.88rem;color:var(--rose);margin:0;min-height:1em}
+.done{text-align:center;padding:20px 8px}
+.done .tick{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--rose),var(--gold));color:#fff}
+.done h3{font-size:1.5rem;margin-bottom:8px}
+.done p{color:var(--muted);margin:0 auto 18px;max-width:40ch}
+.btn-li{background:var(--violet);color:#fff}
+.btn-li:hover{background:var(--plum)}
+.btn-line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+
+/* Evangelist inbox */
+.inbox{margin-top:48px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
+.inbox-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.inbox-head h3{font-size:1.4rem}
+.count{font-variant-numeric:tabular-nums;font-size:.85rem;color:var(--muted)}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filters button{background:var(--tint);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:5px 12px;font:500 .82rem var(--body);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--rose);border-color:var(--rose);color:#fff}
+.req-list{display:grid;gap:12px;list-style:none;margin:0;padding:0}
+.req{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:12px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.req.prayed{border-left-color:#3BA776;opacity:.75}
+.req-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.82rem;color:var(--muted)}
+.pill{background:var(--gold-soft);color:var(--ink);border-radius:999px;padding:2px 10px;font-weight:600;font-size:.78rem}
+.pill.priv{background:var(--tint);color:var(--rose)}
+.req-name{font-weight:700;color:var(--ink);font-size:.95rem}
+.req-msg{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.req-actions{display:flex;justify-content:flex-end}
+.empty{color:var(--muted);text-align:center;padding:24px 8px;border:1px dashed var(--line);border-radius:12px}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:800px){.contact{grid-template-columns:1fr}}
+.c-item{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px;min-width:0;position:relative;overflow:hidden}
+.c-item::before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--rose),var(--gold))}
+.c-item .eyebrow{color:var(--muted)}
+.c-item .big{font-family:var(--display);font-size:1.45rem;margin:6px 0 12px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.c-item .actions{display:flex;flex-wrap:wrap;gap:8px}
+.small-btn{background:transparent;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 13px;font:500 .84rem var(--body);cursor:pointer;text-decoration:none}
+.small-btn:hover{border-color:var(--rose);color:var(--rose)}
+
+footer{background:linear-gradient(90deg,var(--night),var(--violet));color:var(--on-night)}
+footer .wrap{padding-block:34px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.88rem}
+footer .f-verse{font-family:var(--display);color:var(--gold-bright)}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:.25s;z-index:20}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg width="22" height="26" viewBox="0 0 22 26" aria-hidden="true"><path d="M9 0h4v7h9v4h-9v15H9V11H0V7h9z" fill="#FFD166"/></svg>
+      Evangelist Srikanth
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#verse">Today's Word</a>
+      <a href="#about">About</a>
+      <a href="#ministry">Ministry</a>
+      <a href="#contact">Contact</a>
+      <a class="pr" href="#prayer">Prayer</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="sunrays" aria-hidden="true"></div>
+  <svg class="land" viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 250 C160 200 300 230 430 205 C560 180 690 225 820 200 C980 170 1120 215 1260 190 C1350 175 1400 185 1440 180 V420 H0Z" fill="#3F7A50" opacity=".55"/>
+    <path d="M0 300 C140 262 260 290 400 262 C540 236 640 280 780 262 C900 246 960 226 1040 214 C1130 202 1230 236 1320 250 C1380 258 1420 262 1440 262 V420 H0Z" fill="#1E4A2E"/>
+    <g fill="#0A2414">
+      <path d="M0 360 C200 335 380 350 520 330 C620 316 670 270 720 262 C770 254 830 290 920 312 C1060 340 1250 326 1440 330 V420 H0Z"/>
+      <rect x="716" y="182" width="9" height="84" rx="1"/>
+      <rect x="697" y="204" width="47" height="8" rx="1"/>
+      <path d="M180 342 c-4-30 6-44 2-60 c14 6 22 4 30-6 c4 16 18 22 34 18 c-6 14 -2 26 10 34 c-18 2 -30 10 -36 24 h-12 c-2-10-14-14-28-10z" opacity=".95"/>
+      <path d="M1300 316 c-3-22 4-34 1-46 c11 4 17 3 23-5 c3 12 14 17 26 14 c-5 11 -2 20 8 26 c-14 2 -23 8 -28 18 h-9 c-2-8 -11-11 -21-7z" opacity=".95"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Preacher of the Gospel · Guntur</div>
+      <h1>Kuchipudi <span class="grad-text">Srikanth</span></h1>
+      <p class="role">Sharing the love of Jesus Christ through the Word, prayer and fellowship across Guntur and Andhra Pradesh.</p>
+      <p class="telugu">యెహోవా నిన్ను ఆశీర్వదించి నిన్ను కాపాడునుగాక<small>Numbers 6:24 · The Lord bless thee, and keep thee</small></p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#prayer">Send a prayer request</a>
+        <a class="btn btn-ghost" href="#contact">Contact Evangelist Srikanth</a>
+      </div>
+    </div>
+
+    <article class="verse" id="verse" aria-live="polite">
+      <div class="verse-top">
+        <span class="eyebrow">Today's Word</span>
+        <span class="verse-date" id="vDate"></span>
+      </div>
+      <blockquote id="vText"></blockquote>
+      <cite id="vRef"></cite>
+      <div class="verse-tools">
+        <button class="chip" id="vPrev" type="button">← Previous day</button>
+        <button class="chip" id="vToday" type="button">Today</button>
+        <button class="chip" id="vNext" type="button">Next day →</button>
+        <button class="chip" id="vCopy" type="button">Copy verse</button>
+      </div>
+    </article>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="portrait"><img src="data:image/jpeg;base64,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" alt="Evangelist Kuchipudi Srikanth" width="240" height="240" style="display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.05)"></div>
+    <div class="about-text">
+      <div class="eyebrow">About</div>
+      <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin:8px 0 18px">A servant of the Word in Guntur</h2>
+      <p>Evangelist Kuchipudi Srikanth is a preacher of the Gospel based in Guntur, Andhra Pradesh. His ministry is centred on preaching God's Word plainly, praying with families, and encouraging believers to walk faithfully with Christ every day.</p>
+      <p>Whether you are seeking prayer, spiritual guidance, or someone to visit and pray in your home, you are welcome to reach out. No request is too small to bring before the Lord.</p>
+      <ul class="facts">
+        <li>Guntur, Andhra Pradesh</li>
+        <li>Telugu &amp; English</li>
+        <li>Prayer · Preaching · Counsel</li>
+      </ul>
+      <a class="btn btn-li" href="https://www.linkedin.com/in/srikanth-kuchipudi-351611144" target="_blank" rel="noopener" style="margin-top:22px"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg>Connect on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<section id="ministry" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Ministry</div>
+      <h2>How Evangelist Srikanth serves</h2>
+      <p>Contact him to arrange any of these for your family, fellowship or church.</p>
+    </div>
+    <div class="ministry">
+      <div class="min">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M12 7v6M9 10h6"/></svg></div>
+        <h3>Gospel Preaching</h3>
+        <p>Sunday services, revival and gospel meetings, and special church gatherings.</p>
+      </div>
+      <div class="min">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 13v5M10 15h4"/></svg></div>
+        <h3>Home Prayer Visits</h3>
+        <p>Prayer for families, new homes, the sick, and those going through hardship.</p>
+      </div>
+      <div class="min">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M10.5 20a5.5 5.5 0 0 1 11 0"/></svg></div>
+        <h3>Bible Study</h3>
+        <p>Teaching the Scriptures to fellowships, youth groups and women's meetings.</p>
+      </div>
+      <div class="min">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 21 12z"/></svg></div>
+        <h3>Counsel &amp; Guidance</h3>
+        <p>Spiritual counsel for individuals, couples and families, kept in confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="prayer-band" id="prayer">
+  <div class="wrap">
+    <div class="prayer">
+      <aside>
+        <div class="eyebrow">Prayer Requests</div>
+        <h2 style="font-size:clamp(1.8rem,3.6vw,2.6rem);margin-top:8px">Let us pray for you</h2>
+        <p style="color:var(--muted);margin:12px 0 0">Share what is on your heart. Your request goes straight to Evangelist Srikanth, and he will lift it up in prayer.</p>
+        <blockquote>Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.<cite>Philippians 4:6</cite></blockquote>
+      </aside>
+
+      <div class="form-card">
+        <form id="prayerForm" novalidate>
+          <div class="row">
+            <label for="pName">Your name <span class="opt">(optional)</span>
+              <input id="pName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="e.g. Ramesh">
+            </label>
+            <label for="pPlace">Town / village <span class="opt">(optional)</span>
+              <input id="pPlace" name="place" type="text" maxlength="80" placeholder="e.g. Tenali">
+            </label>
+          </div>
+          <label for="pTopic">I need prayer for
+            <select id="pTopic" name="topic">
+              <option>Healing</option>
+              <option>Family</option>
+              <option>Job / Finances</option>
+              <option>Studies / Exams</option>
+              <option>Marriage</option>
+              <option>Salvation of a loved one</option>
+              <option>Thanksgiving</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label for="pMsg">Your prayer request
+            <textarea id="pMsg" name="message" maxlength="2000" placeholder="Write your request in Telugu or English…" required></textarea>
+          </label>
+          <label class="check" for="pPrivate"><input id="pPrivate" type="checkbox"> Keep this request private (for Evangelist Srikanth only, not shared in church prayer)</label>
+          <button class="btn btn-rose" id="pSend" type="submit">Send prayer request</button>
+          <p class="form-note" id="formErr" role="alert"></p>
+        </form>
+
+        <div class="done" id="done" hidden>
+          <div class="tick"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h3>Prayer request received</h3>
+          <p>Evangelist Srikanth will pray for you. “The effectual fervent prayer of a righteous man availeth much.” James 5:16</p>
+          <button class="btn btn-line" id="pAgain" type="button">Send another request</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visible only to the evangelist (site owner/editors) -->
+    <div class="inbox" id="inbox" hidden>
+      <div class="inbox-head">
+        <div>
+          <div class="eyebrow">Only you can see this</div>
+          <h3>Prayer requests received</h3>
+          <div class="count" id="inCount"></div>
+        </div>
+        <div class="filters" role="group" aria-label="Filter requests">
+          <button type="button" data-f="open" aria-pressed="true">To pray</button>
+          <button type="button" data-f="prayed" aria-pressed="false">Prayed</button>
+          <button type="button" data-f="all" aria-pressed="false">All</button>
+        </div>
+      </div>
+      <ul class="req-list" id="reqList"></ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Reach Evangelist Srikanth</h2>
+      <p>Call or message for prayer, visits, or to invite him to preach.</p>
+    </div>
+    <div class="contact">
+      <div class="c-item">
+        <div class="eyebrow">Mobile</div>
+        <div class="big phone-txt"></div>
+        <div class="actions">
+          <a class="small-btn" id="cCall" href="#">Call</a>
+          <a class="small-btn" id="cWa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <button class="small-btn" id="cCopy" type="button">Copy number</button>
+        </div>
+      </div>
+      <div class="c-item">
+        <div class="eyebrow">Location</div>
+        <div class="big">Guntur, Andhra Pradesh</div>
+        <div class="actions">
+          <a class="small-btn" href="https://www.google.com/maps/search/?api=1&query=Guntur%2C%20Andhra%20Pradesh" target="_blank" rel="noopener">Open in Maps</a>
+        </div>
+      </div>
+      <div class="c-item">
+        <div class="eyebrow">LinkedIn</div>
+        <div class="big">Srikanth Kuchipudi</div>
+        <div class="actions"><a class="small-btn" href="https://www.linkedin.com/in/srikanth-kuchipudi-351611144" target="_blank" rel="noopener">View profile</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Evangelist Kuchipudi Srikanth · Guntur, Andhra Pradesh</span>
+    <span class="f-verse">“For God so loved the world…” John 3:16</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ---- Contact number ---- */
+const PHONE_DISPLAY = "+91 90302 83083";
+const PHONE_INTL    = "919030283083";
+
+const VERSES = [
+  ["For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.","John 3:16"],
+  ["The LORD is my shepherd; I shall not want.","Psalm 23:1"],
+  ["I can do all things through Christ which strengtheneth me.","Philippians 4:13"],
+  ["Trust in the LORD with all thine heart; and lean not unto thine own understanding.","Proverbs 3:5"],
+  ["Come unto me, all ye that labour and are heavy laden, and I will give you rest.","Matthew 11:28"],
+  ["And we know that all things work together for good to them that love God, to them who are the called according to his purpose.","Romans 8:28"],
+  ["Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee.","Isaiah 41:10"],
+  ["Thy word is a lamp unto my feet, and a light unto my path.","Psalm 119:105"],
+  ["Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.","John 14:6"],
+  ["God is our refuge and strength, a very present help in trouble.","Psalm 46:1"],
+  ["But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles.","Isaiah 40:31"],
+  ["Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled.","John 14:27"],
+  ["Casting all your care upon him; for he careth for you.","1 Peter 5:7"],
+  ["This is the day which the LORD hath made; we will rejoice and be glad in it.","Psalm 118:24"],
+  ["But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.","Matthew 6:33"],
+  ["If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.","1 John 1:9"],
+  ["The LORD bless thee, and keep thee: the LORD make his face shine upon thee, and be gracious unto thee.","Numbers 6:24-25"],
+  ["Be strong and of a good courage; be not afraid, neither be thou dismayed: for the LORD thy God is with thee whithersoever thou goest.","Joshua 1:9"],
+  ["For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.","Ephesians 2:8"],
+  ["Rejoice evermore. Pray without ceasing. In every thing give thanks.","1 Thessalonians 5:16-18"],
+  ["Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.","Matthew 7:7"],
+  ["Create in me a clean heart, O God; and renew a right spirit within me.","Psalm 51:10"],
+  ["For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.","Jeremiah 29:11"],
+  ["Jesus Christ the same yesterday, and to day, and for ever.","Hebrews 13:8"],
+  ["Delight thyself also in the LORD; and he shall give thee the desires of thine heart.","Psalm 37:4"],
+  ["Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.","2 Corinthians 5:17"],
+  ["I am the light of the world: he that followeth me shall not walk in darkness, but shall have the light of life.","John 8:12"],
+  ["The name of the LORD is a strong tower: the righteous runneth into it, and is safe.","Proverbs 18:10"],
+  ["Now faith is the substance of things hoped for, the evidence of things not seen.","Hebrews 11:1"],
+  ["And my God shall supply all your need according to his riches in glory by Christ Jesus.","Philippians 4:19"],
+  ["Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him.","Revelation 3:20"]
+];
+
+const $ = id => document.getElementById(id);
+const toast = msg => { const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2200); };
+async function copy(text){
+  try{ await navigator.clipboard.writeText(text); toast("Copied"); }
+  catch(e){ const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand("copy"); toast("Copied"); }catch(_){ toast("Select the text to copy"); } ta.remove(); }
+}
+
+/* ---- Daily verse: one per day, the same for everyone on that date ---- */
+let offset = 0;
+function dayIndex(d){ return Math.floor((Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()) - Date.UTC(2024,0,1))/864e5); }
+function renderVerse(){
+  const d = new Date(); d.setDate(d.getDate()+offset);
+  const n = ((dayIndex(d) % VERSES.length) + VERSES.length) % VERSES.length;
+  $("vText").textContent = VERSES[n][0];
+  $("vRef").textContent = VERSES[n][1] + " (KJV)";
+  $("vDate").textContent = d.toLocaleDateString("en-IN",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  $("vToday").disabled = offset===0;
+}
+$("vPrev").onclick = ()=>{offset--; renderVerse();};
+$("vNext").onclick = ()=>{offset++; renderVerse();};
+$("vToday").onclick = ()=>{offset=0; renderVerse();};
+$("vCopy").onclick = ()=> copy(`"${$("vText").textContent}" — ${$("vRef").textContent}`);
+renderVerse();
+
+/* ---- Contact ---- */
+document.querySelectorAll(".phone-txt").forEach(el=>el.textContent=PHONE_DISPLAY);
+$("cCall").href = "tel:+" + PHONE_INTL;
+$("cWa").href = "https://wa.me/" + PHONE_INTL;
+$("cCopy").onclick = ()=> copy(PHONE_DISPLAY);
+$("yr").textContent = new Date().getFullYear();
+
+/* ---- Prayer requests: saved to the site's database ----
+   prayers/<visitorId>  -> { requests: [ {id,name,place,topic,message,private,at} ] }
+   prayed/status        -> { ids: { <requestId>: true } }   (evangelist only) */
+let db = null, user = null, myId = null;
+const ready = (async ()=>{
+  try{ [db, user] = await Promise.all([claude.use("db"), claude.use("user")]); }catch(e){}
+  try{ if(user) myId = await user.id(); }catch(e){}
+  try{ if(db && user && (user.isOwner() || user.canEdit())) startInbox(); }catch(e){}
+})();
+
+const FALLBACK = "Your request could not be sent from here. Please call or WhatsApp Evangelist Srikanth at " + PHONE_DISPLAY + ".";
+
+$("prayerForm").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const msg = $("pMsg").value.trim();
+  if(!msg){ $("formErr").textContent = "Please write your prayer request before sending."; $("pMsg").focus(); return; }
+  $("formErr").textContent = "";
+  const btn = $("pSend"); btn.disabled = true; btn.textContent = "Sending…";
+  await ready;
+  try{
+    if(!db || !myId) throw new Error("no-db");
+    const ref = db.doc("prayers/" + myId);
+    const snap = await ref.get();
+    const list = snap.exists && Array.isArray(snap.data().requests) ? snap.data().requests.slice() : [];
+    list.push({
+      id: Date.now().toString(36) + Math.random().toString(36).slice(2,6),
+      name: $("pName").value.trim().slice(0,80),
+      place: $("pPlace").value.trim().slice(0,80),
+      topic: $("pTopic").value,
+      message: msg.slice(0,2000),
+      private: $("pPrivate").checked,
+      at: new Date().toISOString()
+    });
+    await ref.set({ requests: list.slice(-50) });
+    $("prayerForm").hidden = true; $("done").hidden = false;
+  }catch(err){
+    $("formErr").textContent = FALLBACK;
+  }finally{
+    btn.disabled = false; btn.textContent = "Send prayer request";
+  }
+});
+$("pAgain").onclick = ()=>{ $("prayerForm").reset(); $("done").hidden = true; $("prayerForm").hidden = false; $("pMsg").focus(); };
+
+/* ---- Evangelist inbox ---- */
+let allReqs = [], prayed = {}, filter = "open";
+function startInbox(){
+  $("inbox").hidden = false;
+  db.collection("prayers").onSnapshot(snap=>{
+    allReqs = [];
+    snap.docs.forEach(d=>{ const r = d.data() && d.data().requests; if(Array.isArray(r)) allReqs.push(...r); });
+    allReqs.sort((a,b)=> String(b.at).localeCompare(String(a.at)));
+    renderInbox();
+  }, ()=>{ $("reqList").innerHTML = '<li class="empty">Prayer requests could not be loaded. Reload the page to try again.</li>'; });
+  db.doc("prayed/status").onSnapshot(s=>{ prayed = (s.exists && s.data().ids) || {}; renderInbox(); }, ()=>{});
+}
+function renderInbox(){
+  const n = allReqs.length, done = allReqs.filter(r=>prayed[r.id]).length;
+  $("inCount").textContent = `${n} request${n===1?"":"s"} · ${n-done} still to pray for`;
+  const shown = allReqs.filter(r=> filter==="all" ? true : filter==="prayed" ? prayed[r.id] : !prayed[r.id]);
+  const ul = $("reqList"); ul.textContent = "";
+  if(!shown.length){
+    const li = document.createElement("li"); li.className = "empty";
+    li.textContent = n ? "Nothing here." : "No prayer requests yet. New requests sent from the form above will appear here.";
+    ul.appendChild(li); return;
+  }
+  shown.forEach(r=>{
+    const li = document.createElement("li"); li.className = "req" + (prayed[r.id] ? " prayed" : "");
+    const meta = document.createElement("div"); meta.className = "req-meta";
+    const nm = document.createElement("span"); nm.className = "req-name"; nm.textContent = r.name || "Anonymous";
+    meta.appendChild(nm);
+    if(r.place){ const p=document.createElement("span"); p.textContent = "· " + r.place; meta.appendChild(p); }
+    const tp = document.createElement("span"); tp.className = "pill"; tp.textContent = r.topic || "Prayer"; meta.appendChild(tp);
+    if(r.private){ const pv=document.createElement("span"); pv.className="pill priv"; pv.textContent="Private"; meta.appendChild(pv); }
+    const dt = document.createElement("span"); dt.textContent = "· " + new Date(r.at).toLocaleString("en-IN",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"}); meta.appendChild(dt);
+    const m = document.createElement("p"); m.className = "req-msg"; m.textContent = r.message || "";
+    const act = document.createElement("div"); act.className = "req-actions";
+    const b = document.createElement("button"); b.type = "button"; b.className = "small-btn";
+    b.textContent = prayed[r.id] ? "Mark as not prayed" : "Mark as prayed";
+    b.onclick = ()=> togglePrayed(r.id, b);
+    act.appendChild(b);
+    li.append(meta, m, act); ul.appendChild(li);
+  });
+}
+let writing = false;
+async function togglePrayed(id, b){
+  if(writing) return; writing = true; b.disabled = true;
+  const next = Object.assign({}, prayed);
+  if(next[id]) delete next[id]; else next[id] = true;
+  try{ await db.doc("prayed/status").set({ ids: next }); }
+  catch(e){ toast("Could not update. Try again."); }
+  writing = false; b.disabled = false;
+}
+document.querySelectorAll(".filters button").forEach(btn=>{
+  btn.onclick = ()=>{ filter = btn.dataset.f;
+    document.querySelectorAll(".filters button").forEach(x=>x.setAttribute("aria-pressed", x===btn ? "true":"false"));
+    renderInbox(); };
+});
+</script>
+
+</body></html>
